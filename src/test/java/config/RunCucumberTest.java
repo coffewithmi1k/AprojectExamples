@@ -8,6 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         //  plugin = {"pretty","json:target\\json\\output.json"},
         plugin = {"pretty", "html:target\\html\\"},
+        tags = {"@run"},
         //tags = {"@run"},
         features = "src\\test\\resources\\features\\",
         glue = "stepDefinitions"
