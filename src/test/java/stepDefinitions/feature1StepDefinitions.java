@@ -79,8 +79,9 @@ public class feature1StepDefinitions extends Config {
     }
 
     @Given("^clicks Sign UP button$")
-    public void clicks_button()   {
+    public void clicks_button() throws InterruptedException {
         onSignUppage.clickSignUpButton();
+        Thread.sleep(5000);
     }
 
     @Then("^verifies sign up confirmation message is displayed$")
